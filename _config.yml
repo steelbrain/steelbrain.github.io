@@ -1,0 +1,8 @@
+excerpt_separator: ""
+pygments: true
+markdown: kramdown
+url: http://steelbrain.github.io
+title: Steel Brain
+tagline: The programmer
+description: This is where I share my experiences
+paginate: 7
