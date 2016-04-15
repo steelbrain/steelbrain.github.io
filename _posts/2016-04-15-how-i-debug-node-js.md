@@ -49,6 +49,18 @@ denode ./index
 denode `which browserify`
 ```
 
+#### What's awesome about this?
+
+0. You can click and expand on deep nested objects
+0. You can profile your apps for memory leaks and CPU time
+0. You can set breakpoints on the fly
+0. You can update running code from dev tools
+0. Basically, all the awesomeness of Chromium Dev Tools
+
+#### What's the side effect?
+
+0. Not having the ability to execute it over a network or VM, theoretically you could do X forwarding but it would get too slow and painful
+
 ---
 
 That's what I use to debug my Node.js app, let me know what you think of it in the comments below.
