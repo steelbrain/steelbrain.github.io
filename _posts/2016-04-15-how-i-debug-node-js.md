@@ -3,7 +3,7 @@ published: true
 title: How I debug Node.js
 layout: post
 ---
-[Node.js][] is a server sided runtime for Javascript apps. Being a server sided runtime, it doesn't have a GUI. Therefore it's abilities to provide an easy to use debugging interface are limited.
+[Node.js][] is a server side runtime for Javascript apps. Being a server sided runtime, it doesn't have a GUI. Therefore it's abilities to provide an easy to use debugging interface are limited.
 
 ### Why I don't like Popular Options
 
