@@ -55,6 +55,7 @@ denode `which browserify`
 0. You can profile your apps for memory leaks and CPU time
 0. You can set breakpoints on the fly
 0. You can update running code from dev tools
+0. You can compile your files with babel and debug without banging your head in a wall using sourcemaps
 0. Basically, all the awesomeness of Chromium Dev Tools
 
 #### What's the side effect?
