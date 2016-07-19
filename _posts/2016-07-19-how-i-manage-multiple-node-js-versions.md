@@ -73,21 +73,29 @@ That's it fellaws, now you have an isolated, working Node.js setup.
 n is a bash script so it's lightweight/minimal but still includes all the necessary features.
 
 To upgrade to the latest version of Node.js do
+
 ```
 n latest
 ```
+
 or to install the lts version do
+
 ```
 n lts
 ```
+
 or say you want to download Node.js v4.4.1 do
+
 ```
 n 4.4.1
 ```
+
 If you want to access the list of installed versions and select between them, do
+
 ```
 n
 ```
+
 You can find more about [n][] in it's README.
 
 **Note**: When switching between shells, remember to also include the line inserted by `n-install` in your `~/.bashrc` or `~/.zshrc` into your new shell configuration.
