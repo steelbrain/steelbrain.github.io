@@ -31,7 +31,7 @@ Here's it's pros and cons in comparison
 
 #### Possible downsides of n
 
-0. Too easy if you are a [real programmer][xkcd-joke] :grin:
+0. Too easy if you are a [real programmer][xkcd-joke] 😁
 
 ### How you can too
 
