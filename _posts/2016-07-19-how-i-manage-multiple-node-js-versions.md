@@ -35,7 +35,19 @@ Here's it's pros and cons in comparison
 
 ### How you can too
 
-n installs Node.js in your `~/n` directory and does **not** uninstall or remove any previous versions. The first thing you should do is uninstall any installed version of Node.js.
+There's two different ways to install Node.js, the easy way is when you already have Node.js installed. The hard way assumes nothing!
+
+#### The easy way
+
+The easy way makes use of npm global scripts and is pretty simple.
+
+```
+npm install -g n
+```
+
+#### The hard way
+
+The hard way makes use of [`n-install`](https://github.com/mklement0/n-install). It installs Node.js in your `~/n` directory and does **not** uninstall or remove any previous versions. The first thing you should do is uninstall any installed version of Node.js.
 
 You can skip the removal steps if you do not have Node.js installed already.
 
