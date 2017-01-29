@@ -9,4 +9,4 @@ paginate: 7
 author:
   name: Steel Brain
   email: i@steelbrain.me
-highlighter: rogue
+highlighter: rouge
