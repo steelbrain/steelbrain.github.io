@@ -44,7 +44,7 @@ Linter v2 now includes commands to toggle linter providers from the command pall
 
 ## Tooltip Enhancements
 
-We all know how intruding tooltips can become when they follow your keyboard, therefore in v2 We've added an option for them to follow your mouse. This provides a much more comfortable Linter experience.
+We all know how intrusive tooltips can become when they follow your keyboard, therefore in v2 We've added an option for them to follow your mouse. This provides a much more comfortable Linter experience.
 
 <img alt="Linter UI Default following Mouse" src="https://cloud.githubusercontent.com/assets/4278113/23876163/ebec18ca-085d-11e7-9137-b7a2c6ff6a14.gif" />
 <img alt="Linter UI Default Follows Keyboard" src="https://cloud.githubusercontent.com/assets/4278113/23876225/3f5d8a98-085e-11e7-8c4f-171b8aa46367.gif" />
@@ -57,13 +57,13 @@ Linter v2 now decorates your TreeView. This is especially useful when combined w
 
 ## Upgrading to Linter v2
 
-If you are a package maintainer, We have prepared [migration docs](https://github.com/steelbrain/linter/tree/master/docs#migration-guides) for you. They are not perfect but we're open to contributions!
+If you are a package maintainer, we've prepared [migration docs](https://github.com/steelbrain/linter/tree/master/docs#migration-guides) for you. They are not perfect but we're open to contributions!
 
 ## Closing Thoughts
 
 You can see [Linter v2 in Action](https://www.youtube.com/watch?v=Ek7p49sf8Eo) in the demo video.
 
-This release is really exciting for me. I want to thank [Landon Abney](https://github.com/Arcanemagus) for his continued involvement in the Linter Project and for maintaining dozens of repositories in the [AtomLinter](https://github.com/AtomLinter) org. Thanks to everyone who has ever contributed to the Linter Project, and the users for providing useful bug reports. Peace out 👋.
+This release is really exciting for me. I want to thank [Landon Abney](https://github.com/Arcanemagus) for his continued involvement in the Linter Project and for maintaining dozens of repositories in the [AtomLinter](https://github.com/AtomLinter) org. Thanks to everyone who has ever contributed to the Linter Project, and the users for providing useful bug reports. Peace out 👋 ☮.
 
 
 [`linter`]:https://atom.io/packages/linter
