@@ -4,7 +4,7 @@ title: Atom Linter v2 Released
 layout: post
 ---
 
-It has been almost two years since the v1.0 of the [`linter`][] package for Atom was released to the general public. Since then, we have come a long way. Linter is the second most downloaded Atom package right now with over 2.7 million downloads and hundreds of consumers. Thank you for being a part of it 🙇.
+It has been almost two years since the v1.0 of the [`linter`][] package for Atom was released to the general public. Since then, we have come a long way. Linter is the second most downloaded Atom package right now with over 2.7 million downloads. Thank you for being a part of it 🙇.
 
 Linter v2 has been in the oven for more than a year and I'm excited to announce it's release to you today.
 
