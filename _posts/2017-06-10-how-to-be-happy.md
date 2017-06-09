@@ -15,7 +15,8 @@ My third experiment was with shopping, I had this perception that shopping bring
 
 My last experiment so far has been with my Gaming PC. It's one thing I love the most in this world, It's as powerful as I had the means to make it and I get shivers in my body telling it to my friends, that's how much I love it. While I love it, it's stopped being the constant source of joy.
 
-What I've concluded from the experiments mentioned is that when you depend on objects or people to be your source of happiness, you are going to let down and you are going to get tired. Every external source of happiness has a limit.
+What I've concluded from the experiments mentioned is that when you depend on objects or people to be your source of happiness, you are going to be let down and you are going to get tired. Every 
+external source of happiness has a limit.
 
 So if you want to be happy:
 
