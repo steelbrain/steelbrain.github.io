@@ -35,6 +35,8 @@ Lastly reboot into the USB and proceed with macOS installation.
 - [r/hackintosh](https://www.reddit.com/r/hackintosh/)
 - [r/hackintosh Discord](https://discord.gg/u8V7N5C)
 
+**Update**: The [WhateverGreen.kext][4] mentioned above has become stable enough to be a daily driver, you should include it in your kexts folder (`EFI/CLOVER/kexts/Other/`) if you are using an AMD GPU
+
 
 [1]:https://developer.apple.com/download/
 [2]:http://osxdaily.com/2017/06/29/download-install-macos-high-sierra-public-beta/
