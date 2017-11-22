@@ -3,7 +3,7 @@ published: true
 title: How to be Happy
 layout: post
 ---
-Happiness is a feeling. It's not something we can eat or drink, it's something we feel as a result of certain events. But even more important than that, Happiness is a result of the way we percieve the world.
+Happiness is a feeling. It's not something we can eat or drink, it's something we feel as a result of certain events. But even more important than that, Happiness is a result of the way we perceive the world.
 
 Since the beginning of this year, I have chased happiness directly. I have tried different ways, while most of them have been unsuccessful, a small amount of them worked, or so I thought.
 

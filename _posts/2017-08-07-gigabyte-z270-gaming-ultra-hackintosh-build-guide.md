@@ -3,7 +3,7 @@ published: true
 title: Gigabyte Z270 Gaming Ultra Hackintosh Build Guide
 layout: post
 ---
-This build will walk you through the process of turning you Gigabyte's high end Z270 Gaming Ultra Motherboard into a everyday-driver-usable Hackintosh machine. The motherboard works well in Hackintosh except that I haven't been able to get the audio working with any other kext than Voodoo. A reminder to toss in an SSD into this build if you want it to be usable, macOS on HDDs can be slow.
+This build guide will walk you through the process of turning you Gigabyte's high end Z270 Gaming Ultra Motherboard into a everyday-driver-usable Hackintosh machine. The motherboard works well in Hackintosh except that I haven't been able to get the audio working with any other kext than Voodoo. A reminder to toss in an SSD into this build if you want it to be usable, macOS on HDDs can be slow.
 
 I have already prepared an EFI folder so you don't have to go through the complicated steps of figuring out which kexts to use and how compatible are some compared to the others. Here's the list of all the kexts used in this build
 
