@@ -115,8 +115,8 @@ You can find more about [n][] in it's README.
 That's all for now folks, happy coding!
 
 [n]:https://github.com/tj/n
-[semver]:http://semver.org/
+[semver]:https://semver.org/
 [Node.js]:https://nodejs.org/en/
-[npm-vuln]:http://blog.npmjs.org/post/141702881055/package-install-scripts-vulnerability
-[nvm-slow]:http://broken-by.me/lazy-load-nvm/
+[npm-vuln]:https://blog.npmjs.org/post/141702881055/package-install-scripts-vulnerability
+[nvm-slow]:https://broken-by.me/lazy-load-nvm/
 [xkcd-joke]:https://xkcd.com/378/

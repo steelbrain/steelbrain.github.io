@@ -68,5 +68,5 @@ That's what I use to debug my Node.js app, let me know what you think of it in t
 
 [Node.js]:https://nodejs.org/en/
 [node-inspector]:https://www.npmjs.com/package/node-inspector
-[Electron]:http://electron.atom.io/
+[Electron]:https://electron.atom.io/
 [DeNode]:https://github.com/steelbrain/denode

@@ -39,7 +39,7 @@ Lastly reboot into the USB and proceed with macOS installation.
 
 
 [1]:https://developer.apple.com/download/
-[2]:http://osxdaily.com/2017/06/29/download-install-macos-high-sierra-public-beta/
-[3]:http://osxdaily.com/2017/06/12/make-boot-macos-high-sierra-beta-install-drive-usb/
+[2]:https://osxdaily.com/2017/06/29/download-install-macos-high-sierra-public-beta/
+[3]:https://osxdaily.com/2017/06/12/make-boot-macos-high-sierra-beta-install-drive-usb/
 [4]:https://github.com/vit9696/WhateverGreen
 [5]:https://1drv.ms/u/s!Aq4tygM5KOP7hHmtnQ7ji63zV6ls

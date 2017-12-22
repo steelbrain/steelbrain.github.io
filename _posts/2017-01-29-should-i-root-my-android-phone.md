@@ -34,5 +34,5 @@ Again, custom firmwares on XDA are modified in ways you might not even know. You
 
 I am writing this all out because I voided my warranty and my sense of security thinking I'll get better customizability with a rooted Custom Firmware. It wasn't worth it, I couldn't get my Gear VR working on Lineage OS because it's Samsung only. and the latest LineageOS doesn't even have a Theme Editor so my root wasn't even worth the trouble. I knew what I was in for but I wasn't. I ended up restoring to stock with my knox counter tripped. Don't do what I did people.
 
-[1]:http://www.androidpolice.com/2015/09/29/chainfire-transfers-ownership-of-supersu-to-ccmt-will-remain-involved-in-the-project-for-two-more-years/
+[1]:https://www.androidpolice.com/2015/09/29/chainfire-transfers-ownership-of-supersu-to-ccmt-will-remain-involved-in-the-project-for-two-more-years/
 [2]:https://www.reddit.com/r/AndroidQuestions/comments/55io5z/best_open_source_alternative_to_supersu/d8bgzvt/
