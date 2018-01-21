@@ -3,6 +3,7 @@ published: true
 title: How to be Happy
 layout: post
 ---
+
 Happiness is a feeling. It's not something we can eat or drink, it's something we feel as a result of certain events. But even more important than that, Happiness is a result of the way we perceive the world.
 
 Since the beginning of this year, I have chased happiness directly. I have tried different ways, while most of them have been unsuccessful, a small amount of them worked, or so I thought.
@@ -20,8 +21,8 @@ external source of happiness has a limit.
 
 So if you want to be happy:
 
-- Stop trying to be happy
-- Be your own best friend
-- Stop comparing yourself
+* Stop trying to be happy
+* Be your own best friend
+* Stop comparing yourself
 
-I know this post doesn't fit the usual theme of the blog, but I had to put it out there, Because sometimes the best way to solve your own problems, is to help someone else.
+I know this post doesn't fit the usual theme of the blog, but I had to put it out there.
