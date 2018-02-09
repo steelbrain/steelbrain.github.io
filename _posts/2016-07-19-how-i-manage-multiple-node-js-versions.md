@@ -35,16 +35,16 @@ Here's it's pros and cons in comparison
 
 ### How you can too
 
-You should uninstall the currently installed Node.js/NPM before anything else and then execute these in order
+You should uninstall the currently installed Node.js before anything else and then execute these in order
 
 ```
 curl -L https://git.io/n-install | bash
 # Press y in the prompt or configure the directory if you want
-# Then restart your shell to update it's $PATH and be able to use n/node/npm/npx
+# Then restart your shell to update it's $PATH and be able to use n/node
 exec $SHELL
 ```
 
-That's it fellaws, now you have an isolated, working Node.js setup. If you went with the defaults you should now have an `n` directory in your home directory. That's where your Node.js will live in from now on
+That's it fellaws, now you have an isolated, working Node.js setup. If you went with the defaults you should have an `n` directory in your home directory.
 
 ### Basic Usage
 
