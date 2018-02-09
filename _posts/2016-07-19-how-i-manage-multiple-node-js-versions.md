@@ -14,7 +14,7 @@ After evaluating different popular options including NVM, Ubuntu Repos, Ubuntu P
 0. They can cause conflicts when more than one users try to run different versions of same global modules
 0. You have to use `sudo` when installing global modules or linking local ones (except for homebrew)
 
-I am a security conscious person, I would do anything to avoid using that `sudo` before installing modules from people I don't even know. If you don't share the same fear, read this [Package install scripts vulnerability][npm-vuln] post by npm and you will.
+Having to do `sudo` for npm is bad for a lot of reasons, for examples the directories/files it creates while running as sudo will be owned by root and you won't get to modify them afterwords.
 
 ### How I do it
 
@@ -27,7 +27,7 @@ Here's it's pros and cons in comparison
 0. Works on any POSIX environment
 0. Never asks for or requires sudo
 0. Can download *any* Node.js version
-0. Installs modules in `~/n` so they are isolated per user
+0. Installs modules in `~/n` (configurable) so they are isolated per user
 
 #### Possible downsides of n
 
@@ -35,50 +35,16 @@ Here's it's pros and cons in comparison
 
 ### How you can too
 
-There's two different ways to install Node.js, the easy way is when you already have Node.js installed. The hard way assumes nothing!
-
-#### The easy way
-
-The easy way makes use of npm global scripts and is pretty simple.
+You should uninstall the currently installed Node.js/NPM before anything else and then execute these in order
 
 ```
-npm install -g n
+curl -L https://git.io/n-install | bash
+# Press y in the prompt or configure the directory if you want
+# Then restart your shell to update it's $PATH and be able to use n/node/npm/npx
+exec $SHELL
 ```
 
-#### The hard way
-
-The hard way makes use of [`n-install`](https://github.com/mklement0/n-install). It installs Node.js in your `~/n` directory and does **not** uninstall or remove any previous versions. The first thing you should do is uninstall any installed version of Node.js.
-
-You can skip the removal steps if you do not have Node.js installed already.
-
-```
-# If you use ubuntu
-sudo apt-get remove --purge nodejs
-# If you use homebrew
-brew uninstall node
-# If yu use macports
-sudo port uninstall nodejs
-# If you use nvm
-LINK="https://github.com/creationix/nvm/issues/298"
-xdg-open $LINK || open $LINK
-```
-
-Then to make sure, garbage collect the global `node_modules` directory
-
-```
-sudo rm -rf /usr/local/lib/node_modules
-sudo rm -rf /usr/lib/node_modules
-```
-
-Now run the magical `n-install` script and it'll set it up for you
-
-```
-curl -L -o /tmp/n-install-script https://git.io/n-install
-bash /tmp/n-install-script -y
-exec $SHELL # To re-initialize the PATH variable
-```
-
-That's it fellaws, now you have an isolated, working Node.js setup.
+That's it fellaws, now you have an isolated, working Node.js setup. If you went with the defaults you should now have an `n` directory in your home directory. That's where your Node.js will live in from now on
 
 ### Basic Usage
 
@@ -96,7 +62,7 @@ or to install the lts version do
 n lts
 ```
 
-or say you want to download Node.js v4.4.1 do
+or say you want to download Node.js v8.9.4 do
 
 ```
 n 4.4.1
@@ -110,13 +76,12 @@ n
 
 You can find more about [n][] in it's README.
 
-**Note**: When switching between shells, remember to also include the line inserted by `n-install` in your `~/.bashrc` or `~/.zshrc` into your new shell configuration.
+**Note**: When switching between shells, remember to also include the line inserted by `n-install` in your shell's config file such as `~/.bash_profile`, `~/.bashrc` or `~/.zshrc`.
 
 That's all for now folks, happy coding!
 
 [n]:https://github.com/tj/n
 [semver]:https://semver.org/
 [Node.js]:https://nodejs.org/en/
-[npm-vuln]:https://blog.npmjs.org/post/141702881055/package-install-scripts-vulnerability
 [nvm-slow]:https://broken-by.me/lazy-load-nvm/
 [xkcd-joke]:https://xkcd.com/378/
