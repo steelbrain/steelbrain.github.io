@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: How HMR in Pundle works
 layout: post
 ---
@@ -14,15 +14,15 @@ Here are some of the interesting things about Pundle's implementation of HMR
 
 #### Determining HMR server path:
 
-Both Webpack and Parcel use [WebSockets][ws] to deliver HMR to the clients. These can be a bit hard to develop / maintain because to handle WebSocket connections on the server side you have to either listen on a separate port for HMR (if source is on https, then you have to have https on that one too) or you have to provide the server object to the WebSocket libs (which means it cannot be an express middleware).
+Both Webpack and Parcel use [WebSockets][ws] to deliver HMR to the clients. These can be a bit hard to develop / maintain because to handle WebSocket connections on the server side you have to either listen on a separate port for HMR (if source is on https, then you have to have https on ws too) or you have to provide the server object to the WebSocket libs (which means it cannot be an express middleware).
 
-That leads to extra moving parts in the config, `hmrHost` or `hmrPath`. Pundle solves this by getting rid of WebSockets and using `fetch()` streaming instead. Fetch streaming works on normal HTTP requests so it can be done in an express middleware and does not need any third party library. Pundle instead uses `document.currentScript` + `.hmr.pundle` and then handles it as a route on the server.
+That leads to extra moving parts in the config, `hmrHost` or `hmrPath`. Pundle solves this by getting rid of WebSockets and using `fetch()` streaming instead. Fetch streaming works on normal HTTP requests so it can be done in an express middleware and does not need any third party library. For paths, Pundle uses `document.currentScript` + `.hmr.pundle` and then handles it as a route on the server.
 
-Because this is for HMR, you don't have to worry about supporting fetch streaming in older browsers as your development testing ones should be up to date.
+As HMR is part of the development workflow, you don't have to worry about supporting fetch streaming in older browsers as long as your own is up to date.
 
 #### Compiling and applying changes
 
-While Webpack uses a poll mechanism to determine if files have changed on the server side, Pundle makes the server do the heavy lifting. It writes to an internal list of pending http fetch requests. Pundle's architecture allows it to generate individual files as temporary chunks, meaning that even if your bundle is 100mbs in size, only changed files would be transformed and sent to the client. This gives Pundle `O(nFilesChanged)` instead of `O(nFilesTotal)` time complexity for HMR.
+While Webpack uses a poll mechanism to determine if files have changed on the server side, Pundle makes the server do the heavy lifting. It writes HMR payloads to an internal list of streaming http requests. Pundle's architecture allows it to generate individual files as temporary chunks, meaning that even if your bundle is 100mbs in size, only changed files would be transformed and sent to the client. This gives Pundle `O(nFilesChanged)` instead of `O(nFilesTotal)` time complexity for HMR.
 
 Pundle also only regenerates a full bundle (ie joining all the transformed files together) only when it receives the next non-HMR request meaning that if you keep saving your files without refreshing, your CPU cycles won't be wasted.
 
