@@ -22,7 +22,7 @@ As HMR is part of the development workflow, you don't have to worry about suppor
 
 #### Compiling and applying changes
 
-While Webpack uses a poll mechanism to determine if files have changed on the server side, Pundle makes the server do the heavy lifting. It writes HMR payloads to an internal list of streaming http requests. Pundle's architecture allows it to generate individual files as temporary chunks, meaning that even if your bundle is 100mbs in size, only changed files would be transformed and sent to the client. This gives Pundle `O(nFilesChanged)` instead of `O(nFilesTotal)` time complexity for HMR.
+While Webpack uses a poll mechanism to determine if files have changed, Pundle makes the server do the heavy lifting. It writes HMR payloads to an internal list of streaming http requests. Pundle's architecture allows it to generate individual files as temporary chunks, meaning that even if your bundle is 100mbs in size, only changed files would be transformed and sent to the client. This gives Pundle `O(nFilesChanged)` instead of `O(nFilesTotal)` time complexity for HMR.
 
 Pundle also only regenerates a full bundle (ie joining all the transformed files together) only when it receives the next non-HMR request meaning that if you keep saving your files without refreshing, your CPU cycles won't be wasted.
 
