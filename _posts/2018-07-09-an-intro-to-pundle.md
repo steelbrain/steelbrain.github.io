@@ -8,7 +8,8 @@ layout: post
 
 Here is a list of posts that are part of this series:
 
-- [How imports are handled in pundle](/2018/07/09/how-imports-are-handled-in-pundle.html)
+- [How imports are handled in Pundle](/2018/07/09/how-imports-are-handled-in-pundle.html)
+- [How HMR in Pundle Works](/2018/07/09/how-hmr-in-pundle-works.html)
 
 [pundle-gh]: https://github.com/steelbrain/pundle
 [import-rfc]: https://github.com/tc39/proposal-dynamic-import
