@@ -5,6 +5,10 @@ layout: post
 ---
 [Node.js][] is a server side runtime for Javascript apps. Being a server sided runtime, it doesn't have a GUI. Therefore it's abilities to provide an easy to use debugging interface are limited.
 
+
+Update: Since this was written `--inspect` support has landed in Node.js. It's easier to use and doesn't require installing thirdparty tools.
+You can find more about it in [Node.js debugging Docs][].
+
 ### Why I don't like Popular Options
 
 There are several ways of debugging Node.js, here are few of the reasons why I don't like the most popular ones
@@ -62,11 +66,9 @@ denode `which browserify`
 
 0. Not having the ability to execute it over a network or VM, theoretically you could do X forwarding but it would get too slow and painful
 
----
-
-That's what I use to debug my Node.js app, let me know what you think of it in the comments below.
 
 [Node.js]:https://nodejs.org/en/
 [node-inspector]:https://www.npmjs.com/package/node-inspector
 [Electron]:https://electron.atom.io/
 [DeNode]:https://github.com/steelbrain/denode
+[Node.js debugging Docs]:https://nodejs.org/en/docs/guides/debugging-getting-started/#enable-inspector
