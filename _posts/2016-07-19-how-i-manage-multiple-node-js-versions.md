@@ -65,7 +65,7 @@ n lts
 or say you want to download Node.js v8.9.4 do
 
 ```
-n 4.4.1
+n 8.9.4
 ```
 
 If you want to access the list of installed versions and select between them, do
