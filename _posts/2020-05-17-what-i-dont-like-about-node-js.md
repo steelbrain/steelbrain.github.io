@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: What I don't like about Node.js
 layout: post
 ---
