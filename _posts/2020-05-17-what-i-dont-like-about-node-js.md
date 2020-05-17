@@ -20,6 +20,10 @@ The source of lack of ability to transfer objects instead of Buffers, per my unv
 
 Alas.
 
+Further reading:
+
+- [Locking in Webkit - Webkit Blog](https://webkit.org/blog/6161/locking-in-webkit/)
+
 [Node.js]:https://nodejs.org/en/
 [Webpack]:https://webpack.js.org/
 [Rollup]:https://rollupjs.org/
