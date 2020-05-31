@@ -8,6 +8,10 @@ layout: post
 
 Please keep in mind that this rant is a product representing its time, so if you are reading this in the future, It may no longer be true, or I would hope so.
 
+Short version: No proper multi threading with atomic object access.
+
+Long version:
+
 My personal experience with the short comings of Node.js comes as a result of trying to write a *fast* module bundler in Node.js. In case you don't know, a module bundler like [Webpack][], [Rollup][], [Parcel][] or my own (now deprecated) [Pundle][] is a piece of software that takes your program and its dependencies and bundles them up into a single file or sometimes chunks often to be consumed by browsers. Module bundlers are what let you `require(...)` or `import(...)` dependencies in the browser without the hassle of writing all those `<script ...>` tags by hand (and having to maintain the order of dependencies). You can configure them to do much more than that but that's the gist of it.
 
 For a module bundler to become widely successful, it has to be configurable, work well and be reasonably fast. Now the configurability and being reasonably fast are difficult to achive together as I have come to learn through experience. For example, if you control all the steps in the pipeline, you only have to parse the file once and continue to work on AST from then onwards. Making it configurable means that each step much pass on the resultant string or buffer to the next step. Most module bundlers of current time work this around by manipulating strings directly using [magic-string][] or something similar to it. Using it allows you to infer trivial things and replace imports with internal references. Making the pipeline configurable however means that someone could put Babel transpilation or Terser minification in there, so your direct-string-manipulation isn't going to stop parsing and re-parsing.
