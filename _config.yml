@@ -2,11 +2,11 @@ excerpt_separator: ""
 pygments: true
 markdown: kramdown
 url: https://steelbrain.github.io
-title: Steel Brain
+title: Anees Iqbal
 tagline: The programmer
 description: This is where I share my experiences
 paginate: 7
 author:
-  name: Steel Brain
+  name: Anees Iqbal
   email: i@steelbrain.me
 highlighter: rouge
