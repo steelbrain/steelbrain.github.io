@@ -15,6 +15,6 @@ I used a CH341A USB programmer on Windows paired with ASProgrammer. Instead of d
 ### What I learned from this experience:
 
 - If your machine boots, use that as an opportunity to extract as much information as you can about the BIOS you're about to flash. The programmer needs to know the exact model, otherwise the flashing won't work. Most programmers have a chip-detection feature but it can be spotty.
-- Download a BIOS update from the manufacturer, and dump the BIOS from the cip. Make sure that they both have the same size. Most BIOS update executables from manufacturers can be unzipped to extract the BIOS fw.
+- Download a BIOS update from the manufacturer, and dump the BIOS from the chip. Make sure that they both have the same size. Most BIOS update executables from manufacturers can be unzipped to extract the BIOS fw.
 - Make sure to erase the BIOS before writing. If you just dump and write, the programmer will skip over the zero-bytes leaving you with a corrupt BIOS fw. Some programmers have an erase-flash-verify feature, use that if you can.
 - Practice on a dual-BIOS Computer Motherboard if you can, that'll greatly lower your chances of failure in your first attempt.
